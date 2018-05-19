@@ -1,0 +1,14 @@
+{
+  "name": "id3-edit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "chubssss.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-id3": "^0.1.4"
+  }
+}
