@@ -3,6 +3,7 @@ const NodeID3 = require('node-id3');
 const fs = require('fs');
 
 // Constants.
+const delimiter = '-';
 const songsDir = './songs/';
 const fileExtension = '.mp3';
 
@@ -43,7 +44,7 @@ fs.readdir(songsDir, (err, arrOfFileName) => {
   * E.G { artist: '', title: '' }
   */
 function createId3Tag(songFileName) {
-	const delimitedFileName = songFileName.split('-');
+	const delimitedFileName = songFileName.split(delimiter);
 	const songTitleWithoutExtension = delimitedFileName[1].trim().split('.')[0];
 
 	// Create JSON with ID3 specs.
